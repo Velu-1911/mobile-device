@@ -1,0 +1,107 @@
+.container-fluid
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("/assets/images/phone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+input 
+{
+    padding: 5px;
+    border-radius: 3px;
+}
+.inputfield
+{
+    position: absolute;
+    left:42%;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.input-row 
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8%;
+}
+
+input 
+{
+    margin-top: 5px;
+    border: solid 1px;
+    padding: 5px;
+    /* font-size: 14px; */
+}
+label
+{
+    font-size: 14px;
+}
+input:focus
+{
+    border: none;
+}
+#search
+{
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    width: 95px;
+    border-radius: 20px;
+    height: 35px;
+    border: none;
+    /* background-color: black; */
+    color: black;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#name
+{
+    position: absolute;
+    top: 20%;
+    left: 42%;
+}
+
+@media screen and (max-width: 980px) {
+    .inputfield
+{
+    position: absolute;
+    left:40%;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+#name
+{
+    left:40%
+}
+  }
+
+  @media screen and (max-width: 850px)
+  {
+    .input-row, #name
+    {
+        width: 180px;
+    }
+    .inputfield
+    {
+        position: absolute;
+        left:37%;
+        top: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    #name 
+    {
+        left: 37%;
+    }
+
+  } 

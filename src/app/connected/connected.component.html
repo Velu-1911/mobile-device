@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div class="phonecont">
+    <button class="routerbtn" (click)="showrouterdetails()"> ROUTERS</button>
+    <button class="databtn" (click)="showusagedetails()">Data used</button>
+    <button class="disconnectbtn" style="margin-right: 8px;" (click)="transfer()"><img src="/assets/images/offbtn.png" style="height: 18px;"></button>
+    <div class="routerdetails" *ngIf="showrouter">
+        <p>
+            SSID: {{routerdetails.ssid}} <br>
+            Model: {{routerdetails.model}}  <br>
+            Firmware Version:  {{routerdetails.firmwareVersion}} <br>
+            ipv4:  {{routerdetails.ipv4}} <br>
+        </p>
+    </div>
+    <div class="usagedetails" *ngIf="showusage">
+    <input type="text" placeholder="Data used" [(ngModel)]="data" style="height: 35px; display: block;">
+    <button class="sendbtn" (click)="sendusage()">SEND</button>
+</div>
+</div>
+</div>
